@@ -1,15 +1,27 @@
 .main-footer {
   margin: 36px 0;
+
   @media (min-width: @tablet-width) {
     padding-left: 45px;
+    margin: 18px 0;
+    margin-top: 20px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-top: 25px;
   }
 }
 
 .main-footer__social-list {
+  padding-left: 0;
   list-style-type: none;
   display: flex;
   flex-direction: row;
   column-gap: 6px;
+  margin-bottom: 30px;
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    margin-bottom: 14px;
+  }
 }
 
 .main-footer__hashtag {
@@ -25,7 +37,20 @@
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
-    column-gap: 110px;
-    padding-left: 104px;
+    column-gap: 72px;
+    padding-left: 16px;
+  }
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    column-gap: 230px;
+    padding-left: 73px;
   }
 }
+
+.main-footer__social-list__logo {
+  fill: #81b3d2;
+  &:hover {
+    fill: #669ec0;
+  }
+}
+

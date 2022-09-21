@@ -1,21 +1,27 @@
 .feedback-form__button {
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: #ffffff;
   background-color: #81b3d2;
   border: none;
-  padding: 34px 60px 13px 32px;
+  padding: 21px 49px 18px 47px;;
   margin-left: 20px;
+  &:hover{
+    background-color: #669ec0;
+  }
 
   @media (min-width: @tablet-width) {
-    padding: 18px 60px 13px 49px;
+    padding: 21px 75px 11px 66px;
     margin-left: 60px;
     margin-top: 48px;
+    font-size: 18px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 216px;
+    padding: 25px 108px 12px 92px;
   }
 }
 
@@ -24,26 +30,36 @@
   flex-wrap: wrap;
   border-top: 1px solid #e5e5e5;
   padding-top: 24px;
+
   @media (min-width: @tablet-width) {
     padding: 0;
     border: none;
+    margin-bottom: 71px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 62px;
   }
 }
 
 .feedback-form__legend {
   color: #33333399;
   position: absolute;
-  top: 90%;
-  left: 38%;
+  top: 89%;
+  left: 52%;
 
   @media (min-width: @tablet-width) {
-    margin-top: 71px;
-    margin-left: 132px;
-    color: #000;
+    top: 90%;
+    left: 38%;
+    font-size: 14px;
+    margin-top: 74px;
+    margin-left: 164px;
+    color: #000000;
     position: inherit;
   }
+
   @media (min-width: @desktop-width) {
-    margin-left: 180px;
-    margin-top: 48px;
+    margin-left: 223px;
+    margin-top: 77px;
+    font-size: 14px;
   }
 }

@@ -7,15 +7,16 @@
 
   @media (min-width: @tablet-width) {
     width: 32%;
-    margin-left: 60px;
-    margin-right: 43px;
+    margin-left: 49px;
+    margin-right: 33px;
   }
 
-   @media (min-width: @desktop-width) {
+  @media (min-width: @desktop-width) {
     margin-left: 120px;
-    margin-right: 53px;
+    margin-right: 90px;
   }
 }
+
 .full-name-info::after {
   margin-top: 10px;
   border-top: 1px solid #e5e5e5;
@@ -24,20 +25,35 @@
 .full-name-info__title {
   text-align: center;
   font-weight: 700;
-  font-size: 21px;
+  font-size: 18px;
   line-height: 26px;
-  margin-bottom: 28px;
+  margin-bottom: 21px;
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    margin-bottom: 30px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 28px;
+    margin-left: 35px;
+  }
 }
 
 .full-name-info__input {
   font-weight: bold;
   background-color: #f2f2f2;
   color: #000000;
-  border: none;
+  border: 4px solid #f2f2f2;
   padding: 21px;
   min-width: 229px;
   max-width: 388px;
-  margin-bottom: 16px;
+  margin-bottom: 7px;
+  &:hover {
+    background-color: #e5e5e5;
+  }
+  &:active {
+    background-color: #ffffff;
+    border: 4px solid #e5e5e5;
+  }
 }
 
 .full-name-info__label {
@@ -48,6 +64,7 @@
 .full-name-info__input:hover {
   outline: none;
   color: #000000;
+  outline-offset: -4px;
   background-color: #e5e5e5;
 }
 
